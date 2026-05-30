@@ -74,22 +74,21 @@
 
     <!-- Header -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
-        <!-- 横幅の最大制限をなくし、w-fullで画面いっぱいに広げる -->
-        <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
-            <div class="flex justify-between items-center h-24">
+        <div class="w-full px-12">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex items-center gap-2 text-4xl font-extrabold text-gray-900 tracking-tight">
+                    <a href="#" class="flex items-center gap-2 text-3xl font-extrabold text-gray-900 tracking-tight">
                         <span>ほくと測量株式会社</span>
                     </a>
                 </div>
                 
                 <!-- ヘッダー右側連絡先 (PCのみ表示) -->
-                <div class="hidden md:flex flex-col items-center justify-center ml-auto">
-                    <div class="text-[16px] font-bold text-brand-primary">
+                <div class="hidden md:flex flex-col items-center justify-center ml-auto mr-12">
+                    <div class="text-[15px] font-bold text-brand-primary">
                         TEL / FAX：011-852-9822
                     </div>
-                    <div class="text-[14px] text-gray-600 mt-1">
+                    <div class="text-[13px] text-gray-600 mt-1">
                         営業時間 8:30～17:30
                     </div>
                 </div>
@@ -97,7 +96,7 @@
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" class="text-gray-600 hover:text-brand-primary focus:outline-none cursor-pointer">
-                        <i class="fa-solid fa-bars text-3xl"></i>
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
@@ -105,24 +104,23 @@
         
         <!-- Desktop Navigation -->
         <div class="hidden md:block w-full border-t border-gray-200 bg-gray-50">
-            <!-- こちらも最大制限をなくし、画面いっぱいに広げる -->
-            <nav class="w-full mx-auto flex shadow-sm">
-                <a href="#home" data-target="home" class="desktop-link flex-1 text-center py-5 bg-gray-100 text-gray-700 font-bold text-xl hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">ホーム</a>
+            <nav class="container mx-auto flex w-full shadow-sm">
+                <a href="#home" data-target="home" class="desktop-link flex-1 text-center py-4 bg-gray-100 text-gray-700 font-bold hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">ホーム</a>
                 
                 <!-- 会社案内 ドロップダウン -->
                 <div class="flex-1 border-r border-white relative group">
-                    <a href="#company-info" data-target="about-menu" class="desktop-link block w-full text-center py-5 bg-gray-100 text-gray-700 font-bold text-xl transition duration-300 cursor-pointer">会社案内</a>
+                    <a href="#company-info" data-target="about-menu" class="desktop-link block w-full text-center py-4 bg-gray-100 text-gray-700 font-bold transition duration-300 cursor-pointer">会社案内</a>
                     <div class="absolute left-0 top-full w-full bg-brand-primary hidden group-hover:block shadow-lg z-50">
-                        <a href="#philosophy" class="block py-4 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-base font-medium">会社理念</a>
-                        <a href="#greeting" class="block py-4 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-base font-medium">代表挨拶</a>
-                        <a href="#about" class="block py-4 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-base font-medium">会社概要</a>
-                        <a href="#public-notice" class="block py-4 px-4 text-white hover:bg-white/20 transition duration-300 text-center text-base font-medium">決算公告</a>
+                        <a href="#philosophy" class="block py-3 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-sm font-medium">会社理念</a>
+                        <a href="#greeting" class="block py-3 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-sm font-medium">代表挨拶</a>
+                        <a href="#about" class="block py-3 px-4 text-white hover:bg-white/20 transition duration-300 border-b border-white/20 text-center text-sm font-medium">会社概要</a>
+                        <a href="#public-notice" class="block py-3 px-4 text-white hover:bg-white/20 transition duration-300 text-center text-sm font-medium">決算公告</a>
                     </div>
                 </div>
 
-                <a href="#services" data-target="services" class="desktop-link flex-1 text-center py-5 bg-gray-100 text-gray-700 font-bold text-xl hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">業務内容</a>
-                <a href="#access" data-target="access" class="desktop-link flex-1 text-center py-5 bg-gray-100 text-gray-700 font-bold text-xl hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">アクセス</a>
-                <a href="#contact" data-target="contact" class="desktop-link flex-1 text-center py-5 bg-gray-100 text-gray-700 font-bold text-xl hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer">お問い合わせ</a>
+                <a href="#services" data-target="services" class="desktop-link flex-1 text-center py-4 bg-gray-100 text-gray-700 font-bold hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">業務内容</a>
+                <a href="#access" data-target="access" class="desktop-link flex-1 text-center py-4 bg-gray-100 text-gray-700 font-bold hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer border-r border-white">アクセス</a>
+                <a href="#contact" data-target="contact" class="desktop-link flex-1 text-center py-4 bg-gray-100 text-gray-700 font-bold hover:bg-brand-primary hover:text-white transition duration-300 cursor-pointer">お問い合わせ</a>
             </nav>
         </div>
 
@@ -146,17 +144,16 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow mt-[104px] md:mt-[150px]">
+    <main class="flex-grow mt-20 md:mt-[136px]">
 
 <!-- Hero Section -->
 <section id="home" class="hero h-[60vh] md:h-[70vh] w-full fade-in relative flex items-center justify-center text-center px-4">
-    <!-- 最大幅をなくし、画面いっぱいに広げる -->
-    <div class="w-full mx-auto px-4 sm:px-8 lg:px-12 text-white text-center">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-16 tracking-tight drop-shadow-lg">
+    <div class="max-w-5xl mx-auto text-white text-center">
+        <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-16 tracking-tight drop-shadow-lg">
             <span class="block mb-4">測る技術で</span>    
             <span class="block">未来をアップデート</span>
         </h1>
-        <p class="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white w-full mx-auto leading-loose px-4 drop-shadow-md font-bold text-center">
+        <p class="text-sm sm:text-base md:text-lg lg:text-xl text-white max-w-4xl mx-auto leading-loose px-4 drop-shadow-md font-bold text-center">
             <span class="block mb-3">信頼される測量技術を通じて</span>
             <span class="block mb-3">次世代へつながる社会基盤づくりを支え</span>
             <span class="block">地域社会の発展と安全なインフラ整備に貢献します</span>
@@ -168,19 +165,19 @@
         <section id="company-info" class="hidden">
             <!-- 会社理念 -->
            <div id="philosophy" class="pt-16 pb-12 bg-white">
-                <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
-                    <div class="text-center mb-10">
-                        <h2 class="text-4xl font-bold text-brand-primary mb-2">会社理念</h2>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-brand-primary mb-1">会社理念</h2>
                         <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
-                        <p class="mt-2 text-gray-600 text-lg">Corporate Philosophy</p>
+                        <p class="mt-2 text-gray-600">Corporate Philosophy</p>
                     </div>
                     
-                    <div class="w-full mx-auto bg-gray-50 p-12 md:p-16 rounded-xl shadow-sm border border-gray-100 text-center">
-                        <p class="inline-block text-left text-3xl font-bold text-brand-primary mb-10 leading-relaxed md:-translate-x-4">
+                    <div class="max-w-4xl mx-auto bg-gray-50 p-10 rounded-xl shadow-sm border border-gray-100 text-center">
+                        <p class="inline-block text-left text-2xl font-bold text-brand-primary mb-8 leading-relaxed md:-translate-x-4">
                             確かな技術と誠実な姿勢で、<br>
                             地域社会の未来を創造する
                         </p>
-                        <p class="text-gray-700 leading-loose text-xl mb-6">
+                        <p class="text-gray-700 leading-loose text-lg mb-6">
                             測量は、あらゆる建設プロジェクトの根幹を支える極めて重要な仕事です。<br class="hidden md:block"><br class="hidden md:block">
                             当社は、「確実・正確・誠実」を理念に掲げ、最新技術と長年培ってきた経験を融合し、<br class="hidden md:block">
    　お客様に安心していただける質の高いサービスを提供しております。<br class="hidden md:block"><br class="hidden md:block">
@@ -192,22 +189,25 @@
 
             <!-- 代表挨拶 -->
             <div id="greeting" class="pt-16 pb-12 bg-white">
-                <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
-                    <div class="text-center mb-10">
-                        <h2 class="text-4xl font-bold text-brand-primary mb-2">代表挨拶</h2>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-brand-primary mb-2">代表挨拶</h2>
                         <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
-                        <p class="mt-2 text-gray-600 text-lg">President's Message</p>
+                        <p class="mt-2 text-gray-600">President's Message</p>
                     </div>
 
-                    <div class="w-full mx-auto bg-gray-50 rounded-xl p-8 md:p-12">
-                        <div class="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-100">
+                    <div class="max-w-4xl mx-auto bg-gray-50 rounded-xl p-6 md:p-8">
+                        <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100">
                             <div class="flex-grow">
-                                <p class="text-gray-700 leading-loose mb-8 text-justify text-lg md:text-xl">
-                                    当社は、正確で信頼性の高い測量技術を通じて、地域社会の発展と安全なインフラ整備に貢献することを使命としております。<br><br>
-                                    測量は、未来のまちづくりや社会基盤整備を支える重要な役割を担っています。私たちは単に「測る」だけではなく、その先にある地域の発展や人々の暮らしの安全を見据え、次世代へつながる価値の創造に挑戦し続けます。<br><br>
-                                    これからも「測る技術で、未来をアップデート」の理念のもと、誠実な姿勢と確かな技術を大切にし、お客様から信頼されるパートナーとして、より良い未来づくりに貢献してまいります。<br><br>
+                                <p class="text-gray-700 leading-relaxed mb-6 text-justify">
+                                    平素は格別のお引き立てを賜り、厚く御礼申し上げます。<br><br>
+                                    当社は、正確で信頼性の高い測量技術を通じて、地域社会の発展と安全なインフラ整備に貢献することを使命としております。<br>
+                                    近年、社会環境やお客様のニーズは大きく変化しており、測量業界においても、より高精度かつ効率的な業務が求められる時代となっています。当社は、最新の測量機器や技術の導入に努めるとともに、確かな技術力と誠実な対応をもって、お客様の多様なご要望にお応えしてまいります。<br>
+                                    測量は、未来のまちづくりや社会基盤整備を支える重要な役割を担っています。私たちは単に「測る」だけではなく、その先にある地域の発展や人々の暮らしの安全を見据え、次世代へつながる価値の創造に挑戦し続けます。<br>
+                                    これからも誠実な姿勢と確かな技術を大切にし、お客様から信頼されるパートナーとして、より良い未来づくりに貢献してまいります。<br><br>
+                                    今後とも、皆様の変わらぬご支援とご愛顧を賜りますよう、心よりお願い申し上げます。
                                 </p>
-                                <p class="text-right text-2xl font-bold text-gray-800" style="font-family: 'Noto Serif JP', serif;">
+                                <p class="text-right text-xl font-bold text-gray-800" style="font-family: 'Noto Serif JP', serif;">
                                     代表取締役　渡辺 真行
                                 </p>
                             </div>
@@ -218,52 +218,52 @@
 
             <!-- 会社概要 -->
             <div id="about" class="pt-16 pb-12 bg-white">
-                <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
-                    <div class="text-center mb-10">
-                        <h2 class="text-4xl font-bold text-brand-primary mb-2">会社概要</h2>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-brand-primary mb-2">会社概要</h2>
                         <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
-                        <p class="mt-2 text-gray-600 text-lg">Company Profile</p>
+                        <p class="mt-2 text-gray-600">Company Profile</p>
                     </div>
 
-                    <div class="w-full mx-auto">
+                    <div class="max-w-4xl mx-auto">
                         <div class="bg-gray-50 rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                            <div class="p-8 md:p-12">
-                                <table class="w-full text-left border-collapse text-lg">
+                            <div class="p-8">
+                                <table class="w-full text-left border-collapse">
                                     <tbody>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 w-1/3 align-top">会社名</th>
-                                            <td class="py-5 text-gray-600 font-medium">ほくと測量株式会社</td>
+                                            <th class="py-4 font-semibold text-gray-700 w-1/3 align-top">会社名</th>
+                                            <td class="py-4 text-gray-600 font-medium">ほくと測量株式会社</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">所在地</th>
-                                            <td class="py-5 text-gray-600">〒062-0035<br>北海道札幌市豊平区月寒1条10丁目5-72 大協ビル2階206</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">所在地</th>
+                                            <td class="py-4 text-gray-600">〒062-0035<br>北海道札幌市豊平区月寒1条10丁目5-72 大協ビル2階206</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">代表番号</th>
-                                            <td class="py-5 text-gray-600">
+                                            <th class="py-4 font-semibold text-gray-700 align-top">代表番号</th>
+                                            <td class="py-4 text-gray-600">
                                                 TEL / FAX：011-852-9822<br>
                                                 E-mail：watanabe416@hokuto-m.com
                                             </td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">代表</th>
-                                            <td class="py-5 text-gray-600">代表取締役　渡辺 真行</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">代表</th>
+                                            <td class="py-4 text-gray-600">代表取締役　渡辺 真行</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">設立</th>
-                                            <td class="py-5 text-gray-600">令和8年4月</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">設立</th>
+                                            <td class="py-4 text-gray-600">令和8年4月</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">資本金</th>
-                                            <td class="py-5 text-gray-600">50万円</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">資本金</th>
+                                            <td class="py-4 text-gray-600">50万円</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <th class="py-5 font-semibold text-gray-700 align-top">登録</th>
-                                            <td class="py-5 text-gray-600">登録第(1) - 37883号</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">登録</th>
+                                            <td class="py-4 text-gray-600">登録第(1) - 37883号</td>
                                         </tr>
                                         <tr>
-                                            <th class="py-5 font-semibold text-gray-700 align-top">資格者</th>
-                                            <td class="py-5 text-gray-600">測量士2名</td>
+                                            <th class="py-4 font-semibold text-gray-700 align-top">資格者</th>
+                                            <td class="py-4 text-gray-600">測量士2名</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -275,28 +275,26 @@
 
             <!-- 決算公告 -->
             <div id="public-notice" class="pt-16 pb-12 bg-white">
-                <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
-                    <div class="text-center mb-10">
-                        <h2 class="text-4xl font-bold text-brand-primary mb-2">決算公告</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-brand-primary mb-2">決算公告</h2>
                         <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
-                        <p class="mt-2 text-gray-600 text-lg">Public Notice</p>
+                        <p class="mt-2 text-gray-600">Public Notice</p>
                     </div>
-                    <div class="w-full mx-auto bg-gray-50 rounded-xl p-8 md:p-12 mt-10 min-h-[140px] flex items-center justify-center">
+                    <div class="bg-gray-50 rounded-xl p-8 mt-10 min-h-[140px] flex items-center justify-center">
                         <table class="w-full border-collapse border-2 border-gray-500 bg-white">
                             <tbody>
-                                <!-- ▼第1期▼ -->
                                 <tr class="border-b-2 border-gray-500 hover:bg-gray-50 transition duration-150">
-                                    <td class="py-3 px-4 sm:px-6 font-bold text-gray-800 align-middle text-center text-base md:text-lg border-r-2 border-gray-500">
+                                    <td class="py-1.5 px-1 sm:px-2 font-bold text-gray-800 align-middle text-center text-sm sm:text-base border-r-2 border-gray-500">
                                         第1期（自：令和8年4月10日　至：令和9年3月31日）
                                     </td>
-                                    <td class="py-3 px-4 sm:px-6 text-center align-middle whitespace-nowrap w-auto sm:w-72">
-                                        <a href="kessan_1.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full text-blue-600 hover:text-blue-800 hover:underline transition duration-300 font-bold text-base md:text-lg">
-                                            <i class="fa-solid fa-file-pdf text-red-600 text-xl mr-2"></i>
+                                    <td class="py-1.5 px-4 sm:px-6 text-center align-middle whitespace-nowrap w-auto sm:w-64">
+                                        <a href="kessan_1.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full text-blue-600 hover:text-blue-800 hover:underline transition duration-300 font-bold text-sm sm:text-base">
+                                            <i class="fa-solid fa-file-pdf text-red-600 text-lg mr-1.5"></i>
                                             第1期 決算公告（PDF）
                                         </a>
                                     </td>
                                 </tr>
-                                <!-- ▲第1期▲ -->
                             </tbody>
                         </table>
                     </div>
@@ -306,14 +304,14 @@
 
         <!-- Services Section -->
         <section id="services" class="py-20 bg-gray-50 hidden">
-            <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold text-brand-primary mb-1">業務内容</h2>
                     <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
                     <p class="mt-2 text-gray-600">Our Services</p>
                 </div>
 
-                <div class="w-full mx-auto rounded-md overflow-hidden shadow-sm border border-brand-primary bg-white">
+                <div class="max-w-4xl mx-auto rounded-md overflow-hidden shadow-sm border border-brand-primary bg-white">
                     <div class="bg-brand-primary text-white text-center py-4 text-lg md:text-xl font-bold tracking-wider">
                         公共測量
                     </div>
@@ -348,14 +346,14 @@
 
         <!-- Access Section -->
         <section id="access" class="py-20 bg-white hidden">
-            <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold text-brand-primary mb-1">アクセス</h2>
                     <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
                     <p class="mt-2 text-gray-600">Access Map</p>
                 </div>
 
-                <div class="flex flex-col gap-8 w-full mx-auto">
+                <div class="flex flex-col gap-8 max-w-5xl mx-auto">
                     <!-- Address Info -->
                     <div class="w-full bg-gray-50 p-8 md:p-10 rounded-xl shadow-sm flex flex-col md:flex-row items-start md:items-center">
                         <div class="md:w-1/2 md:pl-10 lg:pl-16">
@@ -406,7 +404,7 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 bg-white hidden">
-            <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-brand-primary mb-4">お問い合わせ</h2>
                     <div class="w-24 h-1 bg-brand-accent mx-auto rounded"></div>
@@ -414,7 +412,7 @@
                 </div>
 
                 <!-- 連絡先窓口 (お電話・メール) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- お電話 -->
                     <div class="border border-gray-200 p-8 bg-gray-50 text-center rounded-sm">
                         <div class="text-brand-primary text-3xl mb-4">
@@ -444,7 +442,7 @@
 
     <!-- Footer -->
     <footer class="bg-white text-gray-700 py-12 border-t border-gray-200">
-        <div class="w-full mx-auto px-4 sm:px-8 lg:px-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Company Info -->
                 <div class="col-span-1 md:col-span-1">
